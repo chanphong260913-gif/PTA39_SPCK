@@ -4,6 +4,7 @@ from PyQt6 import uic
 import os
 
 from pages.login import LoginPage  # trang dau tien truy cap
+from pages.home import HomePage
 
 # lay duong dan den cac file con
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
