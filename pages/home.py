@@ -13,7 +13,7 @@ class HomePage(QMainWindow):
         self.cur_acc = cur_acc
 
         # load file ui
-        ui_path = self.root_dir + "/GUI/home.ui"
+        ui_path = self.root_dir + "/ui/home.ui"
         uic.loadUi(ui_path, self)
 
         # bat su kien cho cac nut bam
