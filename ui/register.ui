@@ -43,6 +43,11 @@ QPushButton#login:hover {
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QLabel, QLineEdit {
+	color: black;
+}</string>
+   </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <spacer name="horizontalSpacer">
@@ -159,7 +164,7 @@ border-radius:45px;
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>Tên hoặc email</string>
+        <string>Email</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_6">
@@ -261,7 +266,7 @@ border-radius:45px;
           </property>
           <property name="font">
            <font>
-            <pointsize>18</pointsize>
+            <pointsize>12</pointsize>
            </font>
           </property>
           <property name="text">
@@ -285,7 +290,7 @@ border-radius:45px;
           </property>
           <property name="font">
            <font>
-            <pointsize>18</pointsize>
+            <pointsize>12</pointsize>
            </font>
           </property>
           <property name="styleSheet">
@@ -324,7 +329,7 @@ border-radius:45px;
         <string notr="true">border:3px solid black;
 border-radius:10px;</string>
        </property>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="password">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -349,7 +354,7 @@ border-radius:0px;</string>
          <enum>QLineEdit::Password</enum>
         </property>
         <property name="placeholderText">
-         <string>Vd: admin,abc@.com</string>
+         <string>Vd: ******</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_7">
@@ -389,7 +394,7 @@ border-radius:0px;</string>
         <string notr="true">border:3px solid black;
 border-radius:10px;</string>
        </property>
-       <widget class="QLineEdit" name="lineEdit_3">
+       <widget class="QLineEdit" name="email">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -411,7 +416,7 @@ border-radius:0px;</string>
          <string/>
         </property>
         <property name="placeholderText">
-         <string>Vd: admin,abc@.com</string>
+         <string>Vd: abc@.com</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_9">
