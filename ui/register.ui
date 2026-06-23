@@ -345,6 +345,9 @@ border-radius:0px;</string>
         <property name="text">
          <string/>
         </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
         <property name="placeholderText">
          <string>Vd: admin,abc@.com</string>
         </property>
