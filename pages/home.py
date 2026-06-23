@@ -33,34 +33,42 @@ class HomePage(QMainWindow):
     # ------------------ xu ly su kien ------------------
     # TODO: chuyen den page (stacked widget trong home)
     def goto_home(self):
-        self.reset_nav()
-        self.home.setProperty("class", "active")
+        self.set_active(self.home)
         self.stackedWidget.setCurrentWidget(self.home_page)
 
     def goto_linh_kien(self):
-        self.reset_nav()
-        self.linh_kien.setProperty("class", "active")
+        self.set_active(self.linh_kien)
         self.stackedWidget.setCurrentWidget(self.linh_kien_page)
 
     def goto_pc(self):
-        self.reset_nav()
-        self.pc.setProperty("class", "active")
+        self.set_active(self.pc)
         self.stackedWidget.setCurrentWidget(self.pc_page)
 
     def goto_sap_co(self):
-        self.reset_nav()
-        self.sap_co.setProperty("class", "active")
+        self.set_active(self.sap_co)
         self.stackedWidget.setCurrentWidget(self.sap_co_page)
 
     def goto_account(self):
-        self.reset_nav()
-        self.account.setProperty("class", "active")
+        self.set_active(self.account)
         self.stackedWidget.setCurrentWidget(self.account_page)
 
     # ------------------ ham ho tro ------------------
-    def reset_nav(self):
-        self.home.setProperty("class", "")
-        self.linh_kien.setProperty("class", "")
-        self.pc.setProperty("class", "")
-        self.sap_co.setProperty("class", "")
-        self.account.setProperty("class", "")
+    def set_active(self, btn):
+        buttons = [
+            self.home,
+            self.linh_kien,
+            self.pc,
+            self.sap_co,
+            self.account
+        ]
+
+        for b in buttons:
+            b.setProperty("class", "")
+
+        btn.setProperty("class", "active")
+
+        # refresh style
+        for b in buttons:
+            b.style().unpolish(b)
+            b.style().polish(b)
+            b.update()
