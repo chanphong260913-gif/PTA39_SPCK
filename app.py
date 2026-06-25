@@ -14,6 +14,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # chi chay khi run bang app.py
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    first_page = LoginPage(main_window=None, root_dir=BASE_DIR)
-    # first_page = HomePage(main_window=None, root_dir=BASE_DIR, cur_acc={ "email": "phong@gmail.com", "password": "123456"})
+    #first_page = LoginPage(main_window=None, root_dir=BASE_DIR)
+    first_page = HomePage(main_window=None, root_dir=BASE_DIR, cur_acc={ "email": "abc@gmail.com", "password": "123456"})
     sys.exit(app.exec())

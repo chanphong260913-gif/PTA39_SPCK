@@ -244,9 +244,28 @@ border-radius:10px;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:#F2F2F2;
+       <string notr="true">#widget_10 {
+background-color:#F2F2F2;
 border:3px solid #BFBFBF;
-border-radius:15px</string>
+border-radius:15px;
+}
+
+QPushButton, QLabel {
+background-color:white;
+border-radius:15px;
+border: 3px solid #BFBFBF;
+}
+
+
+QPushButton:hover {
+	background-color: gray;
+	color: white;
+}
+
+QPushButton[class=&quot;active&quot;] {
+	background-color: gray;
+	color: white;
+}</string>
       </property>
       <widget class="QPushButton" name="cpu">
        <property name="geometry">
@@ -270,7 +289,7 @@ border-radius:15px</string>
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: gray;</string>
+        <string notr="true"/>
        </property>
        <property name="text">
         <string>CPU</string>
@@ -458,7 +477,7 @@ border-radius:15px</string>
        </property>
       </widget>
      </widget>
-     <widget class="QStackedWidget" name="stackedWidget_2">
+     <widget class="QStackedWidget" name="productlist">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -471,7 +490,7 @@ border-radius:15px</string>
        <string notr="true">background-color:#AAC4FF;</string>
       </property>
       <property name="currentIndex">
-       <number>28</number>
+       <number>25</number>
       </property>
       <widget class="QWidget" name="cpu1">
        <widget class="QWidget" name="widget_2" native="true">
@@ -12812,7 +12831,7 @@ border-radius:0px;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="cpu4_2">
+      <widget class="QWidget" name="gpu4">
        <widget class="QWidget" name="widget_73" native="true">
         <property name="geometry">
          <rect>
@@ -40705,7 +40724,7 @@ border-radius:0px;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_31">
+      <widget class="QWidget" name="psu1">
        <widget class="QWidget" name="widget_217" native="true">
         <property name="geometry">
          <rect>
@@ -42056,7 +42075,7 @@ border-radius:0px;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_32">
+      <widget class="QWidget" name="psu2">
        <widget class="QWidget" name="widget_221" native="true">
         <property name="geometry">
          <rect>
@@ -43437,7 +43456,7 @@ border-radius:0px;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_33">
+      <widget class="QWidget" name="psu3">
        <widget class="QWidget" name="widget_225" native="true">
         <property name="geometry">
          <rect>
@@ -44818,7 +44837,7 @@ border-radius:0px;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_34">
+      <widget class="QWidget" name="psu4">
        <widget class="QWidget" name="widget_238" native="true">
         <property name="geometry">
          <rect>
@@ -46199,12 +46218,12 @@ border-radius:0px;</string>
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_35"/>
-      <widget class="QWidget" name="page_36"/>
-      <widget class="QWidget" name="page_37"/>
-      <widget class="QWidget" name="page_38"/>
-      <widget class="QWidget" name="page_39"/>
-      <widget class="QWidget" name="page_40"/>
+      <widget class="QWidget" name="case1"/>
+      <widget class="QWidget" name="case2"/>
+      <widget class="QWidget" name="case3"/>
+      <widget class="QWidget" name="case4"/>
+      <widget class="QWidget" name="case5"/>
+      <widget class="QWidget" name="casefan1"/>
      </widget>
      <widget class="QWidget" name="widget_4" native="true">
       <property name="geometry">
